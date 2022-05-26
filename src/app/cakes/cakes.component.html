@@ -1,0 +1,13 @@
+<!-- <div *ngFor="let each of arr">
+    <div class="card zoom" style="width: 18rem;">
+        
+        <img src={{each.arr.image}} lass="card-img-top" alt="...">
+        <div class="card-body">
+            <h3 class="card-title">{{arr)}} </h3>
+            <p class="card-text">{{each.arr.price}} ₹</p>
+            <a href="#" class="btn btn-primary" >Click here for more details</a>
+            <a href="#" class="btn btn-success">Add to Bucket</a>
+</div> -->
+<div class="row">
+    <app-cake-list class="col" [data]="each" *ngFor="let each of arr"></app-cake-list>
+</div>

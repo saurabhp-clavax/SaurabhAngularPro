@@ -1,0 +1,50 @@
+<!-- <button routerLink="/sign-up Here" routerLinkActive="active">SignUp Here</button> -->
+<!-- <h3>Welcome - SignIn</h3>
+<div>
+    <label for="name">Username : </label>
+    <input type="text" name="name" [(ngModel)]="object.email">
+</div>
+<div>
+    <label for=" pass ">Password : </label>
+    <input type="password " name="pass " [(ngModel)]="object.password" >
+</div>
+<div>
+    <button (click)=" login() ">Login</button>
+    <h6 *ngIf="invalid">Please Sign In</h6>
+</div> -->
+
+
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Please enter your email address and password!</p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="text" placeholder="email" name="name" [(ngModel)]="object.email" id="typePasswordX" class="form-control form-control-lg"><br>
+                <label for="name"></label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                
+                <input type="password " placeholder="password" name="pass " [(ngModel)]="object.password" id="typePasswordX" class="form-control form-control-lg" ><br>
+                <label for=" pass "></label>
+              </div>
+
+              <button (click)=" login()" class="btn btn-outline-light btn-lg px-5" >Login</button>
+              
+              <br><br>
+              <h6 *ngIf="invalid" style="color: red;">Please Create Account first</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+<!-- <div>
+    <table>
+        <tr>
+            <td>
+                <app-cake [object]="object1 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object2 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object3 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object4 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object5 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object7 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object8 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object9 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object10 "></app-cake>
+            </td>
+            <td>
+                <app-cake [object]="object11 "></app-cake>
+            </td>
+            <label>{{each.name}}</label></table>
+</div>-->
+<div class="card zoom" style="width: 18rem;">
+    <!-- <img src="assets/cake1.jpg" class="card-img-top" alt="..."> -->
+    <img src={{data.image}} lass="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title">{{data.name}} </h3>
+        <h6 class="card-title" *ngIf="data.Eggless">Eggless </h6>
+        <p class="card-text">{{data.price}} ₹</p>
+        <a href="#" class="btn btn-primary" (click)="onclick()" >Click here for more details</a>
+        <a href="#" class="btn btn-success">Add to Bucket</a>
+        
+    </div>
+</div>
